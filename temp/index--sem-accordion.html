@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamix</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./thumbnail/ico/megamix-ico.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <!-- Begin menu hamburg -->
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ofertas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Receitas</a>
+                </li>
+            </ul>
+
+            <img src="./thumbnail/logo-01.png" alt="KamelMegamix" class="container__imagem">
+            <!-- End menu hamburg -->
+        </div>
+        <div class="container">
+            <img src="./thumbnail/menu/favorito.svg" alt="Favorito" class="container__imagem">
+            <img src="./thumbnail/menu/compras.svg" alt="Compras" class="container__imagem">
+            <img src="./thumbnail/menu/user.svg" alt="Usuários" class="container__imagem">
+        </div>
+
+        <div class="box-whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=36648444" target="_blank" class="box-link">
+                <div class="box-whatsapp-icone"></div>
+                <span class="box-link--texto">
+                    Receba ofertas no seu whatsapp
+                </span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Você quer preço e qualidade?</h2>
+            <p class="banner__texto">Veja as nossas ofertas</p>
+            <input type="button" value="Confira!" class="banner__botao">
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">MIX DE PRODUTOS</h2>
+
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- Toque o valor Slide 1 pelas IMG<div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/adega.jpeg" alt="Livro sobre ApacheKafka" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/carnes.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/emporio.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/carnes2.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/frutas.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/padaria.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/padaria2.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                    </div>
+        
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+        
+                <article class="card">
+                    <!-- 1a linha -->
+                    <div class="card__descricao">
+                        <!-- 1a coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Receita do Dia</h3>
+                            <h2 class="descricao__titulo-livro">Codorna Assada com molho de vinho tinto</h2>
+                            <p class="descricao__texto">1 cenoura picada; 1 salsão picado; 1 cebola picada; 1 codorna; Alecrim; Tomilho; Vinho tinto; Amido, Sal e pimenta a gosto.</p>
+                        </div>
+                        <!-- 2a coluna -->
+                        <img src="thumbnail/receitas/codorna.png" alt="Codorna" class="descricao__imagem" style="width: 162px;
+                        height: 168px;">
+                    </div>
+                    <!-- 1a linha -->
+                    <div class="card__botoes">
+                        <a href="#" class="botoes__ancora">Modo de Preparo</a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="ofertas">
+            <h2 class="ofertas__titulo">Nossas Ofertas</h2>
+
+            <section class="produtos">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- Toque o valor Slide 1 pelas IMG<div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p3.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Grand Old Parr Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 108,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p1.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Buchanan's DeLuxe Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 113,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p1.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Buchanan's DeLuxe Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 113,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p1.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Buchanan's DeLuxe Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 113,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p2.png" class="produtos__item">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Dosador Duplo Drink Bebida Medidor Gin Jigger Inox 25 50ml Coquetel Bar Bartender</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 25,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p1.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Buchanan's DeLuxe Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 113,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+
+        </section>
+        <section class="box-whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=36648444" target="_blank" class="box-link">
+                <div class="box-whatsapp-icone"></div>
+                <span class="box-link--texto">
+                    Receba ofertas no seu whatsapp
+                </span>
+            </a>
+        </section>
+    </main>
+
+    <hr />
+    <footer class="rodape">
+        <div class="rodape__alone">
+            <!-- <h2 class="rodape__titulo">Kamel Megamix Supermercados</h2> -->
+            <ul class="lista-rodape rodape__alone-rodape">
+                <li class="lista-rodape__item rodape__alone-item">
+                    <img src="./thumbnail/logo02-sf.png" alt="KamelMegamix" class="rodape__logo">
+                </li>
+                <li class="lista-rodape__item rodape__alone-item">
+                    <input type="email" class="rodape__cadastro" placeholder="Cadastre seu e-mail" />
+                </li>
+            </ul>
+            <div class="rodape__alone-container">
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">Atendimento</li>
+                    <li class="lista-rodape__item">Minha conta</li>
+                    <li class="lista-rodape__item">Meus pedidos</li>
+                    <li class="lista-rodape__item">Encontre uma loja</li>
+                    <li class="lista-rodape__item">Perguntas frequentes</li>
+                </ul>
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">Intitucional</li>
+                    <li class="lista-rodape__item">Trabalhe conosco</li>
+                    <li class="lista-rodape__item">Diversidade</li>
+                    <li class="lista-rodape__item">Receitas</li>
+                </ul>
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">Políticas KamelMegamix</li>
+                    <li class="lista-rodape__item">Politica de Trocas e Devoluções</li>
+                    <li class="lista-rodape__item">Termo de Uso</li>
+                    <li class="lista-rodape__item">Política de Privacidade</li>
+                </ul>
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">Formas de Pagamento</li>
+                    <li class="lista-rodape__item">
+                        <div class="lista-rodape__item-convenios">
+                            <img src="./thumbnail/convenios/alelo.png" alt="Alelo" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/amex.png" alt="Amex" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/aura.png" alt="Aura" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/cabal.png" alt="Cabal" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/convenios.png" alt="Convenios" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/visa.png" alt="Visa" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/vr.png" alt="VR" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/elo.png" alt="Elo" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/mastercard.png" alt="Mastercard" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/sodexo.png" alt="Sodexo" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/ticket.png" alt="Ticket" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/valecard.png" alt="ValeCard" class="lista-rodape__item-thumbnail" />
+                            <img src="./thumbnail/convenios/valemais.png" alt="Valemais" class="lista-rodape__item-thumbnail" />
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="rodape__below">
+            <div class="rodape__below-copyright">
+                <p>
+                    Copyright © 2005 - 2023 Supermercado KamelMegamix.<br>
+                    Todo o conteúdo deste site é de uso exclusivo do Kamel Megamix Ltda.
+                </p>
+            </div>
+            <div class="rodape__below-parceiro">
+                <a href="https://araxaprojetosweb.com.br/" target="_blank" class="rodape__below-link">
+                    <span class="rodape__below-parceiro-texto">Desenvolvido por</span>
+                    <img src="./thumbnail/ico/logo-01.png" alt="" class="rodape__below-img">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script> 
+                const swiper = new Swiper('.swiper', {
+                    speed: 100,
+                    spaceBetween: 10,
+                    slidesPerView: 2,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    },
+                });
+        </script>
+        <script src="script.js"></script>
+
+</body>
+</html>

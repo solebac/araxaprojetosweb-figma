@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamix</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./thumbnail/ico/megamix-ico.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-container">
+
+    <header class="cabecalho">
+        <div class="container">
+            <!-- Begin menu hamburg (Mobile) -->
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ofertas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Receitas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Novidades</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Mix de Produtos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Encontre uma loja</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Trabalhe Conosco</a>
+                </li>
+            </ul>
+
+            <img src="./thumbnail/logo-01.png" alt="KamelMegamix" class="container__imagem container__imagem--sm">
+            <a href="#">
+                <img src="./thumbnail/logo-nova-sf.svg" alt="KamelMegamix" class="container__imagem container__imagem--md">
+            </a>
+            <!-- End menu hamburg (Mobile) -->
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao"/>
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Receitas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Novidades</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Encontre uma loja</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Trabalhe Conosco</a>
+                </li>
+            </ul>
+            
+            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>OFERTA DO DIA</li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>MIX DE PRODUTOS</li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>CONTATO</li>
+        </ul>
+
+        <div class="container">
+            <!-- <img src="./thumbnail/menu/localizacao-br.svg" alt="Nossas Lojas" class="container__imagem container__imagem-transparente"> -->
+            <a href="#">
+                <img src="./thumbnail/menu/localizacao-red.svg" alt="Nossas Lojas" class="container__imagem container__imagem--localizacao">
+            </a>
+            <a href="#">
+                <img src="./thumbnail/menu/compras.svg" alt="Compras" class="container__imagem container__imagem--compras">
+            </a>
+            <a href="#">
+                <img src="./thumbnail/menu/user.svg" alt="Usuários" class="container__imagem container__imagem--user">
+            </a>
+        </div>
+
+        <div class="box-whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=36648444" target="_blank" class="box-link">
+                <div class="box-whatsapp-icone"></div>
+                <span class="box-link--texto">
+                    Receba ofertas no seu whatsapp
+                </span>
+            </a>
+        </div>
+    </header>
+    <section class="capa">
+        <div class="capa__container">
+            <section class="banner capa__banner">
+                <h2 class="banner__titulo capa__banner-titulo">Você quer preço e qualidade?</h2>
+                <p class="banner__texto capa__banner-texto">Consulte nossas ofertas</p>
+                <input type="button" value="Confira!" class="banner__botao capa__botao">
+            </section>
+        </div>
+    </section>
+    <main>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">MIX DE PRODUTOS</h2>
+
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- Toque o valor Slide 1 pelas IMG<div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/adega.jpeg" alt="Livro sobre ApacheKafka" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/carnes.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/emporio.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/carnes2.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/frutas.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/padaria.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                        <div class="swiper-slide"><img src="thumbnail/carrossel/padaria2.jpeg" alt="Livro sobre programação" class=" carrossel__imagem" /></div>
+                    </div>
+        
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+        
+                <article class="card">
+                    <!-- 1a linha -->
+                    <div class="card__container">
+                        <div class="card__descricao">
+                            <!-- 1a coluna -->
+                            <div class="descricao">
+                                <h3 class="descricao__titulo">Receita do Dia</h3>
+                                <h2 class="descricao__titulo-livro">Codorna Assada com molho de vinho tinto</h2>
+                                <p class="descricao__texto">1 cenoura picada; 1 salsão picado; 1 cebola picada; 1 codorna; Alecrim; Tomilho; Vinho tinto; Amido, Sal e pimenta a gosto.</p>
+                            </div>
+                            <!-- 2a coluna -->
+                            <img src="thumbnail/receitas/codorna.png" alt="Codorna" class="card__imagem" />
+                        </div>
+                        <!-- 1a linha -->
+                        <div class="card__botoes">
+                            <a href="#" class="botoes__ancora">Modo de Preparo</a>
+                        </div>
+                    </div>
+
+                    <div class="card__container card__container--promocao">
+                        <div class="card__context">
+                            <p class="card__container--promocao-titulo">Esse receita é um oferecimento.</9>
+                            <div class="card__promocao"></div>
+                            <p class="card__anuncio--texto">ANUNCIE AQUI...!</p>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+
+        <section class="ofertas">
+            <h2 class="ofertas__titulo">Nossas Ofertas</h2>
+
+            <section class="produtos">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- Toque o valor Slide 1 pelas IMG<div class="swiper-slide">Slide 1</div> -->
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p3.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Grand Old Parr Blended Scotch Whisky Escocês 12 anos 750ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 108,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/heineken-long.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Cerveja Heineken Puro Malte Pilsen - 12 Unidades Garrafa 600ml</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 59,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p4.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Maionese Hellmann's Pote 500g</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 9,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/picanha.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Picanha Brassi</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 90,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p2.png" class="produtos__item">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Dosador Duplo Drink Bebida Medidor Gin Jigger Inox 25 50ml Coquetel Bar Bartender</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 25,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/picanha-kamel.png" class="produtos__imagem">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Picanha KAMEL</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 59,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="produtos__item">
+                                <div class="produtos_detalhes">
+                                    <a href="#" class="produtos__link">
+                                        <img src="./thumbnail/produtos/exemplo-p1.png" class="produtos__item">
+                                        <div class="produto__box">
+                                            <p class="produtos__descricao">Dosador Duplo Drink Bebida Medidor Gin Jigger Inox 25 50ml Coquetel Bar Bartender</p>
+                                            <div class="produto_marketing">
+                                                <p class="produtos__preco">R$ 25,00</p>
+                                                <div class="produtos__preco-icon">
+                                                    <img src="./thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+
+        </section>
+
+        
+        <section class="destaques">
+            <h2 class="ofertas__titulo">Destaques</h2>
+            <section class="destaques__options">
+                <div class="destaques__container">
+                    <div class="destaques__container--moldura">
+                        <img src="./thumbnail/backgrounds/option-kamel-01.jpeg" alt="" class="destaques__container--iconmain">
+                        <div class="destaques__shadow destaques__shadow-main"></div>
+                        <p class="destaques__titulo">Empório</p>
+                    </div>
+                </div>
+                <div class="destaques__container">
+                    <div class="destaques__container--grid">
+                        <div class="destaques__container--item">
+                            <div class="destaques__container--moldura">
+                                <img src="./thumbnail/backgrounds/frutas-hortifruti.jpg" alt="" class="destaques__container--iconmiddle">
+                                <div class="destaques__shadow"></div>
+                                <p class="destaques__titulo--grid">Hortifruti</p>
+                            </div>
+                        </div>
+                        <div class="destaques__container--item">
+                            <div class="destaques__container--moldura">
+                                <img src="./thumbnail/backgrounds/option-kamel-02.jpeg" alt="" class="destaques__container--iconmiddle">
+                                <div class="destaques__shadow"></div>
+                                <p class="destaques__titulo--grid">Carta de Vinhos</p>
+                            </div>
+                        </div>
+                        <div class="destaques__container--item">
+                            <div class="destaques__container--moldura">
+                                <img src="./thumbnail/backgrounds/açougue-carnes.png" alt="" class="destaques__container--iconmiddle">
+                                <div class="destaques__shadow destaques__shadow-fill"></div>
+                                <p class="destaques__titulo--grid">Carnes selecionadas</p>
+                            </div>
+                        </div>
+                        <div class="destaques__container--item">
+                            <div class="destaques__container--moldura">
+                                <img src="./thumbnail/backgrounds/padaria.jpg" alt="" class="destaques__container--iconmiddle">
+                                <div class="destaques__shadow"></div>
+                                <p class="destaques__titulo--grid">Padaria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="ofertas">
+            <img src="./thumbnail/patrocinio/oferta-teste.jpg" class="ofertas__patrocinada" />
+        </section>
+
+        <section class="imovel-container">
+            <img src="./thumbnail/imoveis/megamix-uberaba.jpeg" class="imovel_kamel" />
+            <p class="imovel_texto">Atacarejo em breve</p>
+        </section>
+
+        <section class="box-whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=36648444" target="_blank" class="box-link">
+                <div class="box-whatsapp-icone"></div>
+                <span class="box-link--texto">
+                    Receba ofertas no seu whatsapp
+                </span>
+            </a>
+        </section>
+    </main>
+
+    <hr />
+    <footer class="rodape">
+        <div class="rodape__mobile">
+            <div class="rodape__alone">
+                <!-- <h2 class="rodape__titulo">Kamel Megamix Supermercados</h2> -->
+                <ul class="lista-rodape rodape__alone-rodape">
+                    <li class="lista-rodape__item rodape__alone-item">
+                        <a href="#">
+                            <img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo">
+                        </a>
+                    </li>
+                    <li class="lista-rodape__item rodape__alone-item">
+                        <input type="email" class="rodape__cadastro" placeholder="Cadastre seu e-mail" />
+                    </li>
+                </ul>
+
+                <div class="lista-rodape--redessociais">
+                    <ul class="redessociais--container">
+                        <li class="redessociais--item mt-10">
+                            <a href="#" class="redessociais--link">
+                                <img src="./thumbnail/redes/facebook.svg" alt="Facebook" class="redessociais-icon" />
+                            </a>
+                        </li>
+                        <li class="redessociais--item">
+                            <a href="#" class="redessociais--link">
+                                <img src="./thumbnail/redes/instagram.svg" alt="Instagram"  class="redessociais-icon" />
+                            </a>
+                        </li>
+                        <li class="redessociais--item">
+                            <a href="#" class="redessociais--link">
+                                <img src="./thumbnail/redes/twitter.svg" alt="Twitter"  class="redessociais-icon" />
+                            </a>
+                        </li>
+                        <li class="redessociais--item">
+                            <a href="#" class="redessociais--link">
+                                <img src="./thumbnail/redes/youtube.svg" alt="Youtube"  class="redessociais-icon" />
+                            </a>
+                        </li>
+                    </ul>
+                        <p class="redessociais--texto">Horário de atendimento:</p>
+                        <p class="redessociais--texto redessociais--middle">De segunda a domingo, das 08h às 22h</p>
+                        <p class="redessociais--texto"> *Horário de Brasília</p>
+                </div>
+
+                <div class="accordion">
+                
+                    <div class="accordion_item" >
+                        <div class="accordion_header">
+                            <span>
+                                Atendimento
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+        
+                        <div class="accordion_content">
+                            <!-- <p>
+                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness
+                            </p> -->
+                            <ul class="lista-rodape lista-rodape--accordion">
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Minha conta</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Meus pedidos</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Encontre uma loja</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Perguntas frequentes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion_item" >
+                        <div class="accordion_header">
+                            <span>
+                                Institucional
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+        
+                        <div class="accordion_content">
+                            <ul class="lista-rodape lista-rodape--accordion">
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Trabalhe conosco</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Diversidade</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Receitas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion_item" >
+                        <div class="accordion_header">
+                            <span>
+                                Políticas KamelMegamix
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+        
+                        <div class="accordion_content">
+                            <ul class="lista-rodape lista-rodape--accordion">
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Politica de Trocas e Devoluções</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Termo de Uso</li>
+                                <li class="lista-rodape__item lista-rodape__item--accordion">Política de Privacidade</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion_item">
+                        <div class="accordion_header">
+                            <span>
+                                Formas de Pagamento
+                            </span>
+                            <div class="icon">
+                                +
+                            </div>
+                        </div>
+        
+                        <div class="accordion_content">
+                            <ul class="lista-rodape lista-rodape--accordion">
+                                <li class="lista-rodape__item lista-rodape__item--accordion">
+                                    <div class="lista-rodape__item-convenios">
+                                        <img src="./thumbnail/convenios/alelo.png" alt="Alelo" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/amex.png" alt="Amex" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/aura.png" alt="Aura" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/cabal.png" alt="Cabal" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/convenios.png" alt="Convenios" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/visa.png" alt="Visa" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/vr.png" alt="VR" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/elo.png" alt="Elo" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/mastercard.png" alt="Mastercard" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/sodexo.png" alt="Sodexo" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/ticket.png" alt="Ticket" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/valecard.png" alt="ValeCard" class="lista-rodape__item-thumbnail" />
+                                        <img src="./thumbnail/convenios/valemais.png" alt="Valemais" class="lista-rodape__item-thumbnail" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape__screen">
+            <div class="rodape__alone">
+                <div class="rodape__alone-container">
+                    <ul class="lista-rodape lista-rodape--base">
+                        <li class="lista-rodape__titulo lista-rodape__titulo--base"> 
+                           <a href="#"><img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo" /></a> 
+                        </li>
+                        <li class="lista-rodape__item lista-rodape__item--base">
+                            <input type="email" class="rodape__cadastro" placeholder="Cadastre seu e-mail" />
+                        </li>
+                        <li class="lista-rodape__item lista-rodape__item--base">
+                            <div class="lista-rodape--redessociais">
+                                <ul class="redessociais--container">
+                                    <li class="redessociais--item">
+                                        <a href="#" class="redessociais--link">
+                                            <img src="./thumbnail/redes/facebook.svg" alt="Facebook" class="redessociais-icon" />
+                                        </a>
+                                    </li>
+                                    <li class="redessociais--item">
+                                        <a href="#" class="redessociais--link">
+                                            <img src="./thumbnail/redes/instagram.svg" alt="Instagram"  class="redessociais-icon" />
+                                        </a>
+                                    </li>
+                                    <li class="redessociais--item">
+                                        <a href="#" class="redessociais--link">
+                                            <img src="./thumbnail/redes/twitter.svg" alt="Twitter"  class="redessociais-icon" />
+                                        </a>
+                                    </li>
+                                    <li class="redessociais--item">
+                                        <a href="#" class="redessociais--link">
+                                            <img src="./thumbnail/redes/youtube.svg" alt="Youtube"  class="redessociais-icon" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                    <p class="redessociais--texto">Horário de atendimento:</p>
+                                    <p class="redessociais--texto redessociais--middle">De segunda a domingo, das 08h às 22h</p>
+                                    <p class="redessociais--texto"> *Horário de Brasília</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="lista-rodape">
+                        <li class="lista-rodape__titulo"> Atendimento</li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Minha conta</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Meus pedidos</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Encontre uma loja</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Perguntas frequentes</a></li>
+                    </ul>
+                    <ul class="lista-rodape">
+                        <li class="lista-rodape__titulo">Intitucional</li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Trabalhe conosco</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Diversidade</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Receitas</a></li>
+                    </ul>
+                    <ul class="lista-rodape">
+                        <li class="lista-rodape__titulo">Políticas KamelMegamix</li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Politica de Trocas e Devoluções</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Termo de Uso</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Política de Privacidade</a></li>
+                    </ul>
+                    <ul class="lista-rodape">
+                        <li class="lista-rodape__titulo">Formas de Pagamento</li>
+                        <li class="lista-rodape__item">
+                            <div class="lista-rodape__item-convenios">
+                                <img src="./thumbnail/convenios/alelo.png" alt="Alelo" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/amex.png" alt="Amex" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/aura.png" alt="Aura" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/cabal.png" alt="Cabal" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/convenios.png" alt="Convenios" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/visa.png" alt="Visa" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/vr.png" alt="VR" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/elo.png" alt="Elo" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/mastercard.png" alt="Mastercard" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/sodexo.png" alt="Sodexo" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/ticket.png" alt="Ticket" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/valecard.png" alt="ValeCard" class="lista-rodape__item-thumbnail" />
+                                <img src="./thumbnail/convenios/valemais.png" alt="Valemais" class="lista-rodape__item-thumbnail" />
+                            </div>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="rodape__below">
+                <div class="rodape__below-copyright">
+                    <p>
+                        Copyright © 2005 - 2023 Supermercado KamelMegamix.<br>
+                        Todo o conteúdo deste site é de uso exclusivo do Kamel Megamix Ltda.
+                    </p>
+                </div>
+                <div class="rodape__below-parceiro">
+                    <a href="https://araxaprojetosweb.com.br/" target="_blank" class="rodape__below-link">
+                        <span class="rodape__below-parceiro-texto">Desenvolvido por</span>
+                        <img src="./thumbnail/ico/logo-01.png" alt="" class="rodape__below-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script> 
+                console.log("entrou [Swiper]");
+                const swiper = new Swiper('.swiper', {
+                    cssMode:true,
+                    loop:true,
+                    speed: 100,
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    autoplay: {
+                    delay: 5000,
+                    },
+                    navigation:{
+                        nextEl:".swiper-button-next",
+                        prevEl:".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    },breakpoints:{
+                        300:{
+                        slidesPerView: 1,
+                        },
+                        1028:{
+                        slidesPerView: 3,
+                        },
+                        1528:{
+                        slidesPerView: 4,
+                        }
+                    }, keyboard: {
+                        enabled: true,
+                        onlyInViewport: false,
+                    },
+                });
+        </script>
+        <script src="script-accordion.js"></script>
+
+</body>
+</html>

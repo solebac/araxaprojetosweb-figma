@@ -1,0 +1,253 @@
+.rodape__screen{
+    display: none;
+}
+.rodape__logo{
+    width: 100px;
+    height: 33px;
+}
+.rodape__below{
+    background-color:var(--green-shadow) ;
+}
+.rodape__below .rodape__below-copyright p{
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--cinza-escuro);
+}
+.rodape__below-link{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.rodape__below-img{
+    height: 12px;
+    margin-top: 4px;
+}
+.rodape__below-parceiro{
+    padding: 0em 1em 1em 1em;
+    text-align: center;
+}
+.rodape__below-parceiro-texto{
+    display: flow;
+    color: var(--cinza-claro);
+}
+hr{
+    margin: 0;
+}
+.rodape__alone{
+    background-color:var(--green-libano) ;
+    padding: 1em;
+}
+.rodape__alone-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lista-rodape__titulo{
+    /* font-size: 14px; */
+    font-weight: 600;
+    /* color: var(--branco); */
+    color: yellow;
+}
+.lista-rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.lista-rodape--accordion{
+    background-color: var(--cor-de-fundo);
+    padding-left: 10px;
+    color: var(--green-dark);
+}
+.rodape__alone-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.lista-rodape__item{
+    font-size: 14px;
+    color: var(--branco);
+    margin: 0.7em 0;
+}
+.lista-rodape__item--accordion{
+    color: var(--green-dark);
+}
+.rodape__cadastro{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5em 0.4em;
+    border: 1px solid var(--branco);
+    border-radius: 24px;
+    color: var(--branco);
+    background-color: transparent;
+}
+.rodape__cadastro::placeholder{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    background-image: url('../thumbnail/menu/email.svg');
+    background-repeat: no-repeat;
+    background-position: 1em;
+    padding-left: 2em;
+    text-align: center;
+}
+.lista-rodape__item-thumbnail{
+    /* max-width: 100%; */
+    max-height: 24px;
+    width: 38px;
+    margin: 0 0.5em 0.5em 0;
+}
+.lista-rodape--redessociais{
+    font-size: 12px;
+    color: var(--branco);
+    padding: 1em 2em 2em 2em;
+    text-align: center;
+}
+.redessociais--texto{
+    line-height: 1.6;
+}
+.redessociais--middle{
+    font-weight: 600;
+}
+.redessociais--container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.redessociais-icon{
+    width: 32px;
+}
+
+@media screen and (min-width:1024px) {
+    .redessociais-icon{
+        border: 1px solid yellow;
+        padding: 1em;
+        border-radius: 5px;
+        background-color: yellowgreen;
+        box-shadow: 0 8px 12px -1px var(--cinza-escuro);
+    }
+    .rodape__cadastro{
+        width: 450px;
+        padding: 0.8em;
+        font-size: 16px;
+    }
+    .rodape__logo{
+        width: 200px;
+        height: 90px;    
+    }
+    .rodape__cadastro::placeholder{
+        font-size: 16px;
+        background-position: 30%;
+    }
+    .mt-10{
+        margin-top: 10px;
+    }
+    .redessociais--texto{
+        font-size: 14px;
+    }
+       
+}
+@media screen and (min-width:1528px) {
+    .rodape__mobile{
+        display: none;
+    }
+    .rodape__screen{
+        display: block;
+    }
+    .rodape__cadastro{
+        width: 100%;
+        padding: 0.5em 0.4em;
+        font-size: 14px;
+    }
+    .rodape__cadastro::placeholder{
+        font-size: 14px;
+        background-position: 10%;
+    }
+    .rodape__logo{
+        width: 120px;
+        height: 50px;
+    }   
+    .rodape__alone{
+        padding: 3em;
+    }
+    .lista-rodape{
+        width: 230px;
+        margin-left: 10px;
+    }
+    .lista-rodape__item--base, .lista-rodape__titulo--base{
+        width:250px;
+    }
+    .lista-rodape--base{
+        width: 300px;
+    }
+    .rodape__below .rodape__below-copyright p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .rodape__below-parceiro-texto{
+        font-weight: 600;
+        color: var(--cinza-escuro);
+    }
+    .rodape__below-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rodape__below-img{
+        margin-left: .5em;
+        height: 16px;
+    }
+    .rodape__below{
+        padding: 1em;
+    }
+    .redessociais-icon{
+        background-color: transparent;
+        padding: .7em;
+        margin: 0 8px;
+    }
+
+    .rodape__alone-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: first baseline;
+    }
+    .lista-rodape__titulo{
+        margin-bottom: 15px;
+    }   
+    .lista-rodape__item-convenios{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .capa__banner-texto{
+        color: var(--amarelo);       
+        font-weight: bold;
+    }
+    .capa__botao{
+        background-color:var(--green-dark);
+    }
+    .lista-rodape__link{
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--branco);
+    }
+    .lista-rodape__titulo{
+        font-size: 18px;
+    }
+
+}

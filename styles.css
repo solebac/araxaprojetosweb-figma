@@ -47,7 +47,6 @@ html, body, .capa{
         height: 100%;
         /* background: url('/thumbnail/backgrounds/frutas-hortifruti4.jpg')no-repeat, */
         background: url('/thumbnail/backgrounds/frutas-hortifruti2.jpg')no-repeat,
-        url('/thumbnail/backgrounds/ruido/ruido.png') no-repeat,
         linear-gradient(50deg, rgb(222, 30, 13), rgb(1, 44, 26));    
         background-attachment: fixed;
         font-family: var(--fonte-principal);

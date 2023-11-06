@@ -1,0 +1,19 @@
+.tabloide{
+    margin: 1em 0;
+}
+
+.tabloide__titulo{
+    color: var(--green-libano);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.8em 0;
+}
+.tabloide__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.4em 0.8em;
+}

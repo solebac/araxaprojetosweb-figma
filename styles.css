@@ -4,6 +4,7 @@
 @import url("./estilos/carrossel.css");
 @import url("./estilos/accordion.css");
 @import url("./estilos/destaques.css");
+@import url("./estilos/tabloide.css");
 
 :root{
     --fonte-principal: "Montserrat", sans-serif;

@@ -47,8 +47,9 @@
 .produtos__item{
     flex: 1 0 25%;
     /* Desktop -> margin: 0px 24px 24px 0px; */
-    max-width: 315px;
+    width: 315px;
     height: 450px;
+    margin-bottom: 1em;
 }
 .produtos_detalhes{
     border-top: 1px solid rgb(229, 229, 229);
@@ -306,7 +307,10 @@
         padding: 1.5em; */
     }
     .produtos__item{
+        max-width: 315px;
         height: auto;
+        margin-right: 1em;
+        margin-bottom: 0em;
     }
     .produtos__descricao {
         font-size: 16px;

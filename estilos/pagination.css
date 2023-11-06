@@ -1,17 +1,28 @@
+.tabloide__container{
+    padding: 2em;
+}
 .tabloide__pag-link {
     display: inline-block;
     vertical-align: middle;
-    padding: 5px;
+    padding: 1px;
 }
 .tabloide__pag-link.disabled > span,
 .tabloide__pag-link.current > span,
 .tabloide__pag-link > a{
-    display: block;
+
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* display: block; */
     border-radius: 50%;
-    font-size: 16px;
-    line-height: 1.42857;
-    margin-right: 5px;
-    padding: 10px 17px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: .42857;
+    /* margin-right: 5px; */
+    /* padding: 10px 17px; */
     position: relative;
     text-decoration: none;
     border: none;
@@ -27,7 +38,9 @@
 .tabloide__pag-link.current > span{
     font-size: 24px;
     font-weight: bold;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
+    height: 42px;
+    width: 42px;
 }
 .tabloide__pag-link > a{
     background-color: var(--red-libano);
@@ -46,4 +59,54 @@
     background-color: var(--red-capa) !important;
     border-color: var(--red-capa);
     color: var(--branco);
+}
+
+@media screen and (min-width:1028px) {
+    .tabloide__container{
+        padding: 5em;
+    }
+    .tabloide__pag-link {
+        padding: 5px;
+    }
+    .tabloide__pag-link.disabled > span,
+    .tabloide__pag-link.current > span,
+    .tabloide__pag-link > a{
+        height: auto;
+        width: auto;
+        display: block;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 1.42857;
+        margin-right: 5px;
+        padding: 10px 17px;
+    }
+    .tabloide__pag-link:active > a,
+    .tabloide__pag-link:hover > a,
+    .tabloide__pag-link:focus > a,
+    .tabloide__pag-link.current > span{
+        height: auto;
+        width: auto;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+    .tabloide__pag-link > a{
+        background-color: var(--red-libano);
+        color: var(--branco);
+        cursor: pointer;
+    }
+    .tabloide__pag-link.disabled > span,
+    .tabloide__pag-link.current > span{
+        background-color: var(--green-dark);
+        color: var(--branco);
+        cursor: inherit;
+    }
+    .tabloide__pag-link:active > a,
+    .tabloide__pag-link:hover > a,
+    .tabloide__pag-link:focus > a {
+        background-color: var(--red-capa) !important;
+        border-color: var(--red-capa);
+        color: var(--branco);
+    }
+    
 }

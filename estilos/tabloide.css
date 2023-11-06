@@ -1,7 +1,11 @@
 .tabloide{
     margin: 1em 0;
 }
-
+.produtos__link:hover{
+    border: 10px solid var(--green-libano);
+    background: var(--green-capa);
+    transition: 5s all;
+}
 .tabloide__titulo{
     color: var(--green-libano);
     background-color: var(--branco);
@@ -12,8 +16,29 @@
     padding: 1em 0 0.8em 0;
 }
 .tabloide__container{
+    background-color: var(--green-shadow);
+    padding-bottom: 20px;
+    padding: 5em;
+    /* padding: 0.4em 0.8em; */
+}
+.tabloide__container--padding{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.4em 0.8em;
+    flex-direction: row;
+    padding: 1em 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.tabloide__row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.tabloide__icon{
+    width: 12px;
 }

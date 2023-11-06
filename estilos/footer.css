@@ -235,7 +235,8 @@ hr{
         flex-wrap: wrap;
     }
     .capa__banner-texto{
-        color: var(--amarelo);       
+        /* color: var(--amarelo);        */
+        color: var(--red-libano);
         font-weight: bold;
     }
     .capa__botao{

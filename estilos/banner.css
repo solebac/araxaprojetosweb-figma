@@ -27,6 +27,21 @@
     background-color: var(--green-libano);
     color: var(--branco);
 }
+.banner__pesquisa{
+    background-color: var(--red-capa);
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em 5em;
+    width: 70%;
+    margin-top: 1em;
+}
+.banner__pesquisa::placeholder{
+    background-image: url('../thumbnail/menu/pesquisa.svg');
+    background-repeat: no-repeat;
+    background-position: 2em;
+    text-align: center;
+}
 .lista-rodape{
     display: flex;
     justify-content: space-around;

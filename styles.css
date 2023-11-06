@@ -5,6 +5,7 @@
 @import url("./estilos/accordion.css");
 @import url("./estilos/destaques.css");
 @import url("./estilos/tabloide.css");
+@import url("./estilos/pagination.css");
 
 :root{
     --fonte-principal: "Montserrat", sans-serif;

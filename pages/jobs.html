@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megamix</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../thumbnail/ico/megamix-ico.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./thumbnail/ico/megamix-ico.ico">
     <link rel="stylesheet" href="../reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,257 +106,118 @@
     <section class="capa">
         <div class="capa__container">
             <section class="banner capa__banner">
-                <h2 class="banner__titulo capa__banner-titulo">Você quer preço e qualidade?</h2>
-                <p class="banner__texto capa__banner-texto">Consulte nossas ofertas</p>
-                <a href="#tabloide" class="banner__botao capa__botao">Confira!</a>
-                <input type="search" class="banner__pesquisa" placeholder="Não encontrou seu produto, posso ti ajudar?">
+                <h2 class="banner__titulo capa__banner-titulo">Precisa de um emprego?</h2>
+                <p class="banner__texto capa__banner-texto">Consulte nossas oportunidades de emprego.</p>
+                <a href="#jobs" class="banner__botao capa__botao">Saiba mais</a>
+                <input type="search" class="banner__pesquisa banner__pesquisa--jobs" placeholder="Você pode encontrar por aqui, é so informar a vaga?">
             </section>
         </div>
     </section>
     <main>
+        <section class="job">
+            <h2 class="job__titulo">
+                Oportunidades de emprego
+            </h2>
+            <div class="job__container">
+                <div class="job__container--box" id="jobs">
+                    
+                    <div class="job__container--row">
+                    <div class="swiper">
 
-        <section class="tabloide" id="tabloide">
-            <h2 class="tabloide__titulo">Nossas Ofertas</h2>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- Toque o valor Slide 1 pelas IMG<div class="swiper-slide">Slide 1</div> -->
+                            <div class="swiper-slide">
+                                <div class="job__vaga">
+                                    <div class="job__vaga--chave mt-10">
+                                        <p class="job__chave--descricao">Código</p>
+                                        <p class="job__chave--codigo">789654</p>
+                                    </div>
+                                    <p class="job__vaga--titulo mt-10"><span class="job__vaga--fields">Vaga.: </span> Ajudante de açougueiro</p>
+                                    <p class="job__vaga--remuneracao mt-10"><span class="job__vaga--fields">Remuneração.: </span>R$ 1.600,00</p>
+                                    <p class="job__vaga--exigencia mt-10"><span class="job__vaga--fields">Exigências.: </span>exige seis meses de experiência em carteira de trabalho</p>
+                                    <p class="job__vaga--sobre mt-10"><span class="job__vaga--fields">Sobre a vaga.: </span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="job__vaga--time mt-10">
+                                        <p class="job__vaga--abertura">06/11/2023</p>
+                                        <p class="job__vaga--candidatos">08-candidaturas</p>
+                                        <p class="job__vaga--fechamento">16/11/2023</p>
+                                    </div>
+                                </div>
+                            </div>
 
-            <section class="tabloide__container">
+                            <div class="swiper-slide">
+                                <div class="job__vaga">
+                                    <div class="job__vaga--chave mt-10">
+                                        <p class="job__chave--descricao">Código</p>
+                                        <p class="job__chave--codigo">789654</p>
+                                    </div>
+                                    <p class="job__vaga--titulo mt-10"><span class="job__vaga--fields">Vaga.: </span> Assistente administrativo</p>
+                                    <p class="job__vaga--remuneracao mt-10"><span class="job__vaga--fields">Remuneração.: </span>R$ 1.200,00</p>
+                                    <p class="job__vaga--exigencia mt-10"><span class="job__vaga--fields">Exigências.: </span>exige seis meses de experiência em carteira de trabalho</p>
+                                    <p class="job__vaga--sobre mt-10"><span class="job__vaga--fields">Sobre a vaga.: </span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="job__vaga--time mt-10">
+                                        <p class="job__vaga--abertura">06/11/2023</p>
+                                        <p class="job__vaga--candidatos">08-candidaturas</p>
+                                        <p class="job__vaga--fechamento">16/11/2023</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="tabloide__row">
-                    <ul class="tabloide__pagination-custom text-center">
-                        <li class="tabloide__pag-link"><a href="#"><img src="../thumbnail/menu/angle-double-left-solid.png" class="tabloide__icon" alt=""></a></li>
-                        <li class="tabloide__pag-link"><a href="#">1</a></li>
-                        <li class="tabloide__pag-link"><a href="#">2</a></li>
-                        <li class="tabloide__pag-link current"><span>3</span></li>
-                        <li class="tabloide__pag-link"><a href="#">4</a></li>
-                        <li class="tabloide__pag-link"><a href="#">5</a></li>
-                        <li class="tabloide__pag-link"><a href="#"><img src="../thumbnail/menu/angle-double-right-16.png" class="tabloide__icon" alt=""></i></a></li>
-                    </ul>
+                            <div class="swiper-slide">
+                                <div class="job__vaga">
+                                    <div class="job__vaga--chave mt-10">
+                                        <p class="job__chave--descricao">Código</p>
+                                        <p class="job__chave--codigo">789650</p>
+                                    </div>
+                                    <p class="job__vaga--titulo mt-10"><span class="job__vaga--fields">Vaga.: </span> Atendente balconista</p>
+                                    <p class="job__vaga--remuneracao mt-10"><span class="job__vaga--fields">Remuneração.: </span>R$ 1.450,00</p>
+                                    <p class="job__vaga--exigencia mt-10"><span class="job__vaga--fields">Exigências.: </span>exige seis meses de experiência em carteira de trabalho</p>
+                                    <p class="job__vaga--sobre mt-10"><span class="job__vaga--fields">Sobre a vaga.: </span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="job__vaga--time mt-10">
+                                        <p class="job__vaga--abertura">06/11/2023</p>
+                                        <p class="job__vaga--candidatos">01-candidaturas</p>
+                                        <p class="job__vaga--fechamento">16/11/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="job__vaga">
+                                    <div class="job__vaga--chave mt-10">
+                                        <p class="job__chave--descricao">Código</p>
+                                        <p class="job__chave--codigo">789654</p>
+                                    </div>
+                                    <p class="job__vaga--titulo mt-10"><span class="job__vaga--fields">Vaga.: </span> Ajudante de carga e descarga de mercadoria</p>
+                                    <p class="job__vaga--remuneracao mt-10"><span class="job__vaga--fields">Remuneração.: </span>R$ 1.600,00</p>
+                                    <p class="job__vaga--exigencia mt-10"><span class="job__vaga--fields">Exigências.: </span>exige seis meses de experiência em carteira de trabalho</p>
+                                    <p class="job__vaga--sobre mt-10"><span class="job__vaga--fields">Sobre a vaga.: </span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="job__vaga--time mt-10">
+                                        <p class="job__vaga--abertura">06/11/2023</p>
+                                        <p class="job__vaga--candidatos">02-candidaturas</p>
+                                        <p class="job__vaga--fechamento">16/11/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                        </div>
+
+                    </div>
+    
+                    <div class="job__container--row">
+                    </div>
+    
                 </div>
-
-                <div class="tabloide__container--padding">
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/exemplo-p3.png" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Grand Old Parr Blended Scotch Whisky Escocês 12 anos 750ml</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 108,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/heineken-long.png" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Cerveja Heineken Puro Malte Pilsen - 12 Unidades Garrafa 600ml</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 59,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>       
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/exemplo-p4.png" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Maionese Hellmann's Pote 500g</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 9,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>       
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/picanha.png" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Picanha Brassi</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 90,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>       
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabloide__container--padding">
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/exemplo-p2.png" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Dosador Duplo Drink Bebida Medidor Gin Jigger Inox 25 50ml Coquetel Bar Bartender</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 25,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/picanha-kamel.png" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Picanha KAMEL</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 59,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>       
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/exemplo-p1.png" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Dosador Duplo Drink Bebida Medidor Gin Jigger Inox 25 50ml Coquetel Bar Bartender</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 25,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/peito.png.jpg" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">File de peito de frango Sadia 1kg</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 15,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tabloide__container--padding">
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/nestle.png.jpg" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Bombom Chocolate Sortidos Nestlé/Especialidades caixa 251g no Atacado - Atacadão
-                                    </p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 10,99</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/limpol.png.jpg" class="produtos__imagem">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">DETERGENTE LIMPOL 500 ML DIVERSOS ODORES</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 2,30</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>       
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/colgate.png.jpg" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">Colgate - Creme Dental Colgate Total 12 Clean Mint 90G
-                                    </p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 8,50</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="produtos__item">
-                        <div class="produtos_detalhes">
-                            <a href="#" class="produtos__link">
-                                <img src="../thumbnail/produtos/peito.png.jpg" class="produtos__item">
-                                <div class="produto__box">
-                                    <p class="produtos__descricao">File de peito de frango Sadia 1kg</p>
-                                    <div class="produto_marketing">
-                                        <p class="produtos__preco">R$ 15,00</p>
-                                        <div class="produtos__preco-icon">
-                                            <img src="../thumbnail/produtos/icones/cart.svg" class="produtos_cart" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-        </section>
-
-
-
-        <section class="ofertas">
-            <img src="../thumbnail/patrocinio/oferta-teste.jpg" class="ofertas__patrocinada" />
+            </div>
         </section>
 
         <section class="box-whatsapp">
@@ -575,7 +436,7 @@
                     </ul>
                     <ul class="lista-rodape">
                         <li class="lista-rodape__titulo">Institucional</li>
-                        <li class="lista-rodape__item"><a href="jobs.html" class="lista-rodape__link">Trabalhe conosco</a></li>
+                        <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Trabalhe conosco</a></li>
                         <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Diversidade</a></li>
                         <li class="lista-rodape__item"><a href="#" class="lista-rodape__link">Receitas</a></li>
                     </ul>
@@ -625,7 +486,31 @@
         </div>
     </footer>
         
-    <script src="../script-accordion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script> 
+                console.log("entrou [Swiper]");
+                const swiper = new Swiper('.swiper', {
+                    cssMode:true,
+                    loop:true,
+                    speed: 100,
+                    spaceBetween: 10,
+                    slidesPerView: 1,
+                    autoplay: {
+                    delay: 9000,
+                    },
+                    navigation:{
+                        nextEl:".swiper-button-next",
+                        prevEl:".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    }, keyboard: {
+                        enabled: true,
+                        onlyInViewport: false,
+                    },
+                });
+        </script>
 
 </body>
 </html>

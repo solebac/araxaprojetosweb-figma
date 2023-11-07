@@ -7,6 +7,7 @@
 @import url("./estilos/tabloide.css");
 @import url("./estilos/pagination.css");
 @import url("./estilos/stores.css");
+@import url("./estilos/jobs.css");
 
 :root{
     --fonte-principal: "Montserrat", sans-serif;

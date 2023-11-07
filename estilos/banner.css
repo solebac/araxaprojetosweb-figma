@@ -46,6 +46,10 @@
     background-position: 2em;
     text-align: center;
 }
+.banner__pesquisa--jobs{
+    width: 80%;
+    padding: 1em 2em;
+}
 .lista-rodape{
     display: flex;
     justify-content: space-around;
@@ -66,6 +70,9 @@
         font-size: 16px;
         padding: 1em 5em;
         margin-top: 1em;
+    }
+    .banner__pesquisa--jobs{
+        padding: 1em 2em;
     }
     
 }

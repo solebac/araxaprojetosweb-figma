@@ -1,0 +1,128 @@
+.celling {
+    padding-top: 7rem;
+  }
+  .contato {
+    width: 90%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    color: var(--branco);
+  }
+  .contato--moon {
+    background-color: var(--btn-left);
+  }
+  .contato--resize {
+    /* padding: 1rem 3rem 3rem 3rem; */
+    padding: 3em .5em 0 .5em;
+  }
+  .contato__titulo {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    /* padding: 0.5rem; */
+    box-sizing: border-box;
+    color: var(--branco);
+    padding: .7em;
+    background-color: #7c191d5c;
+    color: var(--branco);
+  }
+  .contato__subtitulo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    color: var(--cinza-texto);
+  }
+  .contato__form {
+    margin-top: 1em;
+  }
+  .contato__form--input-padrao {
+    display: block;
+    color: var(--branco);
+    margin: 0 0 0.5rem;
+    padding: 0.625rem 1.2rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--btn-left);
+  }
+  .contato__form--input-padrao::placeholder {
+    color: var(--branco);
+    font-weight: 500;
+  }
+  .contato__etiqueta {
+    display: block;
+    font-size: 1rem;
+    margin: 0 0 0.625rem;
+    color: var(--branco);
+    font-weight: 600;
+  }
+  .checkboks {
+    margin: 1.2rem 0;
+  }
+  .enviar {
+    width: 100%;
+    padding: 0.938rem 0;
+    background: green;
+    background: #7c191d5c;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 0.313rem;
+    margin: 1em 0;
+  }
+  .enviar:hover {
+    /*background:#008000;*/
+    background: var(--contato-enviar-hover);
+    cursor: pointer;
+    transition: 3s all;
+    transform: scale(1.1);
+  }
+  input[type=\"checkbox\"],
+  input[type=\"radio\"] {
+    margin: 4px;
+    margin-top: 1px\\9;
+    line-height: normal;
+  }
+  @media screen and (max-width: 1024px) {
+    .contato {
+      width: 90vw;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .contato__titulo {
+      font-size: 2rem;
+      padding: 1.5rem 1rem;
+    }
+    .contato__subtitulo {
+      line-height: 1.3;
+      font-size: 1rem;
+      text-align: justify;
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .contato--resize {
+      padding: 0.8rem;
+    }
+    .container {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+  
+  input[type='file'] {
+    display: none
+  }
+  
+  /* Aparência que terá o seletor de arquivo */
+  label.selecao-arquivo {
+    width: 93%;
+    display: block;
+    background-color: var(--red-capa);
+    border-radius: 5px;
+    color: var(--branco);
+    cursor: pointer;
+    /* margin: 10px; */
+    padding: 6px 20px;
+    margin-top: 1em;
+  }

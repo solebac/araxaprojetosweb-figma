@@ -10,6 +10,7 @@
 @import url("./estilos/stores.css");
 @import url("./estilos/jobs.css");
 @import url("./estilos/contato.css");
+@import url("./estilos/receitas.css");
 
 :root{
     --fonte-principal: "Montserrat", sans-serif;
@@ -49,6 +50,20 @@ html, body, .capa{
     overflow-x: hidden;
 } */
 .capa{height: auto;}
+.capa__banner--box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.capa__banner--imagem{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.capa__banner--receita{
+    border-radius: 180px;
+}
 
 @media screen and (min-width:1528px) {
     body.body-container{
@@ -93,7 +108,7 @@ html, body, .capa{
     } */
     .capa__banner{
         background-color: var(--green-capa);
-        box-shadow: 0px 10px 10px 0px #00000040;
+        box-shadow: 0px 10px 10px 0px var(--red-faixada);
         width: 42%;
         height: auto;
         margin: 0 auto;
@@ -112,5 +127,9 @@ html, body, .capa{
         letter-spacing: -0.05em;
     }
     .capa__banner-texto{font-size: 22px;}
-
+    .capa__banner--receita{
+        background-color: var(--red-faixada);
+        color: var(--branco);
+        box-shadow: 0px 10px 10px 0px var(--red-faixada);
+    }
 }

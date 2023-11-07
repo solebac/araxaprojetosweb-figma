@@ -1,3 +1,6 @@
+.job__container{
+    padding: 3em 0;
+}
 .job__titulo{
     color: var(--green-libano);
     background-color: var(--branco);

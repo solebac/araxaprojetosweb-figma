@@ -1,5 +1,7 @@
 .job__container{
     padding: 3em 0;
+    background-color: var(--green-shadow);
+    margin: 0 0 2em;
 }
 .job__titulo{
     color: var(--green-libano);
@@ -9,11 +11,6 @@
     font-size: 18px;
     font-weight: 700;
     padding: 1em 0 0.8em 0;
-}
-
-.job__container{
-    background-color: var(--green-shadow);
-    margin: 0 0 2em;
 }
 .job__container--box{
     width: 95%;

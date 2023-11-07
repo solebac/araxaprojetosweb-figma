@@ -28,8 +28,10 @@
     --green-shadow: #e6f9eac4;
     --green-gradiente: linear-gradient(97.54deg, #00A850 35.49%, #03fc7b 165.37%);
     --cinza-escuro: #858585;
+    --cinza-normal: #554c4c;
     --cinza-claro:#e1e1e1;
     --cinza-shadow: #00000040;
+    --cinza-black: #5e5656;
 
 }
 html, body, .capa{

@@ -10,6 +10,7 @@
 
 .job__container{
     background-color: var(--green-shadow);
+    margin: 0 0 2em;
 }
 .job__container--box{
     width: 95%;
@@ -72,4 +73,33 @@
 .job__chave--descricao, .job__chave--codigo, .job__vaga--titulo{
     font-size: 22px;
     font-weight: 600;
+}
+.job__falesobrevoce{
+    width: 920px;
+    height: 620px;
+}
+
+
+
+.job__topicos{
+    background: var(--azul-gradiente);  
+    text-align: center;
+    padding: 1em 0;
+}
+.topicos_lista{
+    display: flex;
+    /* quebra linha quando chega no final */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topicos_item{
+    margin: 2em 0.5em;
+}
+.topicos__link{
+    color: var(--branco);
+    background-color: var(--red-libano);
+    padding: 1em;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
 }

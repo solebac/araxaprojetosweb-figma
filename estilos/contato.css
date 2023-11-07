@@ -23,7 +23,7 @@
     box-sizing: border-box;
     color: var(--branco);
     padding: .7em;
-    background-color: #7c191d5c;
+    background-color: var(--red-faixada);
     color: var(--branco);
   }
   .contato__subtitulo {
@@ -63,7 +63,7 @@
     width: 100%;
     padding: 0.938rem 0;
     background: green;
-    background: #7c191d5c;
+    background: var(--red-faixada);
     color: var(--branco);
     font-weight: bold;
     font-size: 1.25rem;

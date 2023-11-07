@@ -76,9 +76,9 @@
                 </li>
             </ul>
             
-            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>OFERTA DO DIA</li>
+            <li class="opcoes__item"><a href="ofertas.html" class="opcoes__link"></a>OFERTA DO DIA</li>
             <li class="opcoes__item"><a href="#" class="opcoes__link"></a>MIX DE PRODUTOS</li>
-            <li class="opcoes__item"><a href="#" class="opcoes__link"></a>CONTATO</li>
+            <li class="opcoes__item"><a href="stores.html" class="opcoes__link"></a>CONTATO</li>
         </ul>
 
         <div class="container">
@@ -112,6 +112,54 @@
     </section>
     <main>
         <section class="store">
+            <h2 class="store__titulo">
+                Fale conosco
+            </h2>
+            <div class="store__container--contato">
+                <div class="store__container--box-contato">
+                        <input
+                        type="text"
+                        name="nomeSobrenome"
+                        class="contato__form--input-padrao"
+                        placeholder="Nome e sobrenome"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        class="contato__form--input-padrao"
+                        required
+                        placeholder="seuemail@dominio.com"
+                    />
+                    <input
+                        type="tel"
+                        name="telefone"
+                        class="contato__form--input-padrao"
+                        required
+                        placeholder="(xx)xxxxx-xxxx"
+                    />
+                </div>
+                <div class="store__container--box-contato">
+                    <input
+                        type="text"
+                        name="assunto"
+                        class="contato__form--input-padrao"
+                        required
+                        placeholder="Assunto"
+                    />
+        
+                    <label htmlFor="mensagem" class="contato__etiqueta">
+                        Mensagem
+                    </label>
+        
+                    <textarea
+                        name="mensagem"
+                        rows="3"
+                        class="contato__form--input-padrao"
+                    ></textarea>
+                    <input type="button" value="Enviar" class="enviar" />
+                </div>
+            </div>
             <h2 class="store__titulo">
                 KamelMegamix sempre um perto de você
             </h2>

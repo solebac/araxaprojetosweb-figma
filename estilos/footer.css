@@ -90,6 +90,9 @@ hr{
     border-radius: 24px;
     color: var(--branco);
     background-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 .rodape__cadastro::placeholder{
     font-size: 11px;

@@ -1,0 +1,23 @@
+input::placeholder {
+    color: var(--branco);  
+}
+input[type="text"].contato__form--input-padrao,
+input[type="email"].contato__form--input-padrao,
+input[type="tel"].contato__form--input-padrao,
+select {
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  padding: 10px;
+  outline: none;
+  border-bottom: 1px solid var(--branco);
+  background: transparent;
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--branco);
+  font-size: 14px;
+}
+select {
+    width: 50%;
+}

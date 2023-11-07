@@ -37,7 +37,7 @@
     min-height: 620px;
 }
 .job__vaga{
-    width: 630px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

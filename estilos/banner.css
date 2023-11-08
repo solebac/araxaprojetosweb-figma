@@ -17,6 +17,7 @@
 }
 .banner__botao{
     display: block;
+    width: 70%; margin: 0 auto;
     /* width: 70%; 
     padding: 0.5em 0;*/
     padding: 0.5em 1em;
@@ -37,13 +38,14 @@
     border-radius: 24px;
     padding: 1em 2.5em;
     width: 100%;
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 2em;
 }
 .banner__pesquisa::placeholder{
     background-image: url('../thumbnail/menu/pesquisa.svg');
+    background-size: 16px 16px;
     background-repeat: no-repeat;
-    background-position: 2em;
+    background-position: 1em;
     text-align: center;
 }
 .banner__pesquisa--jobs{
@@ -55,13 +57,26 @@
     justify-content: space-around;
     align-items: center;
 }
-
+@media screen and (min-width:740px) {
+    .banner__botao{width: 50%;}
+    .banner__pesquisa::placeholder{
+        background-size: auto;
+    }    
+    .banner__pesquisa{
+        width: 70%;
+        padding: 1em 2.5em;
+        font-size: 14px;
+    }
+}
 @media screen and (min-width:1024px) {
+    /* .banner__pesquisa{
+        padding: 1em 2.5em;
+    } */
     .banner__titulo{
         font-size: 36px;
     }
     .banner__botao{
-        width: 100%;
+        /* width: 100%; */
         padding: 1em 0;
         font-size: 22px;
     }
@@ -80,5 +95,9 @@
     @media screen and (min-width:1328px) {
     .banner__botao{
         width: 50%;
+    }
+    .banner__pesquisa{
+        width: 100%;
+        padding: 1em 4em;
     }
 }

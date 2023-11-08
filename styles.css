@@ -57,17 +57,19 @@ html, body, .capa{
     justify-content: space-around;
     align-items: center;
 }
-.capa__banner--imagem{
-    width: 180px;
-    height: 180px;
+.capa__banner--imagem {
+    width: 90px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
 .capa__banner--receita{
     border-radius: 180px;
+    padding: 15px;
+    margin: 1em 0.5em;
 }
 .capa__banner-titulo{
-    font-size: 32px;
+    font-size: 24px;
 }
 @media screen and (min-width:1024) {
     .capa__banner-titulo{
@@ -146,5 +148,11 @@ html, body, .capa{
     }
     .capa__banner-titulo{
         font-size: 48px;
+    }
+    .capa__banner--imagem{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 }

@@ -93,7 +93,8 @@
 @media screen and (min-width:1024) {
 }
 
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+    @media screen and (min-width:1328px) {
     .receitas__container{
         padding: 3em 0;
         /* background-color: var(--green-shadow); */

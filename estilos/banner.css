@@ -76,7 +76,8 @@
     }
     
 }
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+    @media screen and (min-width:1328px) {
     .banner__botao{
         width: 50%;
     }

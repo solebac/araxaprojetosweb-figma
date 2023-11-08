@@ -109,7 +109,8 @@
         min-width: 860px;
     } */
 }
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+@media screen and (min-width:1328px) {
     .store__localizacao{
         width: 460px;
         height: 380px;

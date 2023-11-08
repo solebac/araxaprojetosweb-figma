@@ -134,7 +134,8 @@
     }
 }
 
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+@media screen and (min-width:1328px) {
     .job__container--teste{
         height: 700px;
     }

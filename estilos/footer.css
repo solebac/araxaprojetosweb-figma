@@ -162,7 +162,8 @@ hr{
     }
        
 }
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+    @media screen and (min-width:1328px) {
     .rodape__mobile{
         display: none;
     }

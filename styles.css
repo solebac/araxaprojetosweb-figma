@@ -79,7 +79,8 @@ html, body, .capa{
         padding: 1.5em 0;
     }
 }
-@media screen and (min-width:1528px) {
+/* @media screen and (min-width:1528px) { */
+    @media screen and (min-width:1328px) {
     body.body-container{
         width: 100%;
         height: 100%;

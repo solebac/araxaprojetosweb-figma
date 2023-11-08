@@ -1,7 +1,10 @@
+/* label.selecao-arquivo{
+    width: 100%;
+} */
 .job__container{
-    padding: 3em 0;
+    padding: 0.5em 0;
     background-color: var(--green-shadow);
-    margin: 0 0 2em;
+    /* margin: 0 0 2em; */
 }
 .job__titulo{
     color: var(--green-libano);
@@ -13,28 +16,28 @@
     padding: 1em 0 0.8em 0;
 }
 .job__container--box{
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 auto;
-    padding: 1em;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 
 .job__container--row{
-    width: 50%;
+    width: 98%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 10px;
-    padding: 1em;
+    padding-bottom: 1em;
     background-color: var(--green-capa);
-    margin-right: 5px;
-    min-height: 620px;
+    margin-bottom: 1em;
+    height: auto;
 }
 .job__vaga{
     width: auto;
@@ -44,10 +47,11 @@
 }
 .job__vaga--time{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 1em 0;
-    font-size: 18px;
+    flex-direction: column;
+    padding: .6em 0;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1.4;
@@ -62,7 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2.5em;
+    padding: 1em .8em;
     background-color: var(--red-faixada);
     color: var(--branco);
 }
@@ -71,13 +75,18 @@
     line-height: 1.8;
 }
 .job__chave--descricao, .job__chave--codigo, .job__vaga--titulo{
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
+}
+.job__vaga--titulo, .job__vaga--remuneracao, .job__vaga--exigencia, .job__vaga--sobre{
+    font-size: 16px;
+    margin: 0.4em 0;
 }
 .job__falesobrevoce{
     width: 920px;
     height: 620px;
     margin: 3em auto;
+
 }
 
 .job__topicos{
@@ -92,7 +101,7 @@
     justify-content: center;
 }
 .topicos_item{
-    margin: 2em 0.5em;
+    margin: 1em 0.1em;
 }
 .topicos__link{
     color: var(--branco);
@@ -104,17 +113,131 @@
 }
 .job__card{
     box-shadow: 0px 10px 10px 0px var(--cinza-shadow);
-    width: 50%;
+    width: 90%;
     background-color: var(--branco);
     margin: 0 auto;
-    padding: 2em;
-    border-radius: 24px;
+    padding: 0.5em;
+    border-radius: 14px;
 }
 .job__imagem{
-    width: 180px;
-    height: 142px;
-    border-radius: 50%;
-    background-color: beige;
-    padding: 2rem;
-    margin: 0 1.5em;
+    width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: beige;
+  padding: 1.5rem;
+  margin: 0 .5em;
+}
+
+@media screen and (min-width:1024) {
+    label.selecao-arquivo {
+      width: 93%;
+    }
+}
+
+@media screen and (min-width:1528px) {
+    .job__container--teste{
+        height: 700px;
+    }
+    .job__container{
+        padding: 3em 0;
+    }
+    .job__titulo{
+        color: var(--green-libano);
+        background-color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 1em 0 0.8em 0;
+    }
+    .job__container--box{
+        width: 95%;
+	flex-direction: row;
+    }
+    
+    .job__container--row{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 10px;
+        padding: 1em;
+        background-color: var(--green-capa);
+        margin-right: 5px;
+        min-height: 720px;
+    }
+    .job__vaga{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .job__vaga--time{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+	flex-direction: row;
+        padding: 1em 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .job__vaga--chave{
+        padding: 1em 2.5em;
+    }
+    .job__vaga--sobre{
+        text-align: justify;
+        line-height: 1.8;
+    }
+    .job__chave--descricao, .job__chave--codigo, .job__vaga--titulo{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .job__vaga--titulo, .job__vaga--remuneracao, .job__vaga--exigencia, .job__vaga--sobre{
+    font-size: 18px;
+	}
+    .job__falesobrevoce{
+        width: 920px;
+        height: 620px;
+        margin: 3em auto;
+    }
+    
+    .job__topicos{
+        background: var(--azul-gradiente);  
+        text-align: center;
+        padding: 1em 0;
+    }
+    .topicos_lista{
+        display: flex;
+        /* quebra linha quando chega no final */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .topicos_item{
+        margin: 2em 0.5em;
+    }
+    .topicos__link{
+        color: var(--branco);
+        background-color: var(--red-libano);
+        padding: 1em;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .job__card{
+        box-shadow: 0px 10px 10px 0px var(--cinza-shadow);
+        width: 50%;
+        background-color: var(--branco);
+        margin: 0 auto;
+        padding: 2em;
+        border-radius: 24px;
+    }
+    .job__imagem{
+        width: 180px;
+        height: 142px;
+        border-radius: 50%;
+        background-color: beige;
+        padding: 2rem;
+        margin: 0 1.5em;
+    }   
 }

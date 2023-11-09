@@ -1,3 +1,12 @@
+.capa-ativa{
+    display: block;
+}
+.tabloide__destaques{
+    display: none;
+}
+/* .rotacionar{
+    transform: rotate(30deg);
+} */
 .tabloide{
     margin: 1em 0;
 }
@@ -48,4 +57,85 @@
         
     }
     
+}
+
+@media screen and (min-width:1328px) {
+    .tabloide__destaques{
+        display: flex; margin: 1em 0;
+    }
+    .tabloide__destaques--imagem{
+        border: 1px solid red;
+        width: 300px;
+    }
+    .tabloide__destaques--left{
+        width: 40%; 
+        height: 280px;
+        border-radius: 0 140px 140px 0;  
+        background-color: var(--red-libano); 
+        color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabloide__destaques--middle{
+        width: 20%; 
+        height: 280px;
+        border-radius: 50%; 
+        background-color: var(--green-dark); 
+        color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabloide__destaques--rigth{
+        width: 40%; 
+        height: 280px;
+        border-radius: 140px 0 0 140px; 
+        background-color: var(--red-libano); 
+        color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabloide__destaques--titulo{
+        font-family: var(--fonte-secundaria);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 38px;
+    }
+    .tabloide__destaques--titulo > a{
+        text-decoration: none;
+        color: var(--branco);
+    }
+    .tabloide__destaques--left-titulo, .tabloide__destaques--rigth-titulo{
+        font-size: 34px;
+        text-shadow: 1.6px 1px #eff7f6ed;
+        letter-spacing: -0.05em;
+    }
+    .tabloide__destaques--left-pesquisa{
+        width: 70%;
+        background-color: var(--red-capa);
+        border: 1px solid var(--branco);
+        color: var(--branco);
+        border-radius: 24px;
+        padding: 1em 2.5em;
+        font-size: 10px;
+        margin-top: 2em;
+    }
+    .tabloide__destaques--left-pesquisa::placeholder{
+        background-image: url('../thumbnail/menu/pesquisa.svg');
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: 1em;
+        text-align: center;
+        font-size: 16px;
+    }
+    .tabloide__destaques--rigth-titulo{
+        text-align: center;
+        font-size: 28px;
+        padding-left: 2em;
+    }
 }

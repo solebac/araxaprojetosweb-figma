@@ -1,4 +1,4 @@
-.capa-ativa{
+#oferta-capa{
     display: block;
 }
 .tabloide__destaques{
@@ -60,6 +60,9 @@
 }
 
 @media screen and (min-width:1328px) {
+    #oferta-capa{
+        display: none;
+    }
     .tabloide__destaques{
         display: flex; margin: 1em 0;
     }

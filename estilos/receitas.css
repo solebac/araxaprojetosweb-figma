@@ -1,3 +1,6 @@
+/* #capa-receitas{
+    display: block;
+} */
 .receitas__container{
     /* padding: 1em 0; */
     background-color: var(--green-shadow);

@@ -1,6 +1,11 @@
-/* #capa-receitas{
-    display: block;
-} */
+#receitas-promocao{
+    width: auto;
+    margin-left: 0 2em;
+}
+.receitas__container--row-promocoes{
+    width: 100%;
+    margin-top: 1em;
+}
 .receitas__container{
     /* padding: 1em 0; */
     background-color: var(--green-shadow);
@@ -41,13 +46,17 @@
     padding: 0.5em;
   }
 .receitas__container--row-main{ 
-    width: 100%; 
-    padding: 4px;
-}
-.receitas__container--row-bottom{
     width: 95%;
     padding: 0.5em;
     margin: 1em 0;
+}
+.receitas__container--row-right{
+    width: 95%;
+}
+.receitas__container--row-bottom{
+    /* width: 95%;
+    padding: 0.5em;
+    margin: 1em 0; */
     background-color: var(--green-capa);
     box-shadow: 0px 10px 10px 0px var(--red-faixada);
     color: var(--branco);
@@ -94,10 +103,18 @@
     font-size: 15px;
 }
 @media screen and (min-width:1024) {
+    #receitas-promocao{
+        margin-left: 25px;
+    }
 }
-
+@media screen and (min-width:1528px) {
+    #receitas-promocao{
+        margin-left: 25px;
+    }
+}
 /* @media screen and (min-width:1528px) { */
     @media screen and (min-width:1328px) {
+    
     .receitas__container{
         padding: 3em 0;
         /* background-color: var(--green-shadow); */
@@ -138,9 +155,14 @@
         width: 70%; 
         padding: 1em;
     }
+    .receitas__container--row-right{
+        width: 25%;
+    }
     .receitas__container--row-bottom{
+        width: auto;
         border: 1px solid green; 
-        width: 25%; margin-left: 5px; 
+        /* width: 25%;  */
+        margin-left: 5px; 
         padding: 1em;
         margin-top: 3em;
         background-color: var(--green-capa);

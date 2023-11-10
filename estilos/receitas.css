@@ -1,3 +1,17 @@
+.receitas__container--titulo{
+    width: 99%;
+    margin-left: .2em;
+    margin-bottom: .7em;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: var(--red-faixada);
+    color: var(--branco);
+}
 #receitas-promocao{
     width: auto;
     margin-left: 0 2em;

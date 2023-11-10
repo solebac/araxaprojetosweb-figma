@@ -1,3 +1,7 @@
+.lista-rodape__item--accordion-link{
+    text-decoration: none;
+    color: var(--green-dark);
+}
 .rodape__screen{
     display: none;
 }

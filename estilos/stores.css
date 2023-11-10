@@ -49,10 +49,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
-
-
-
+}
 .store__titulo{
     color: var(--green-libano);
     background-color: var(--branco);
@@ -148,6 +145,11 @@
     #store-capa{
         display: none;
     }
+    .store__container--destaque-box-lista-item{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
     /* .store__container--destaque{
         flex-direction: row;
     } */
@@ -183,15 +185,16 @@
         margin-left: 1em;
     }
     .store__container--destaque-box-lista-item{
-		padding: 1em 2em 1em 1em;
+		/* padding: 1em 2em 1em 1em; */
+        padding: 1em;
 		margin-left: 5px;
 		border:0;
 		background-color: transparent;
     }
-    .store__container--destaque-box-lista-item:before{
+    /* .store__container--destaque-box-lista-item:before{
         content: "★";
         margin-right: 10px;
-    }
+    } */
     .test-qualidade::before{
         content: url("../thumbnail/stores/medal.svg");
     }
@@ -212,6 +215,20 @@
     }
     .test-atendimento::before{
         content: url("../thumbnail/stores/phone.svg");
+    }
+    .test-span{
+        color: var(--branco) !important;
+        text-shadow: 1.6px 1px black;
+        margin-left: 1em;
+    }
+    .test-shadow{
+        border: 1px solid;
+        padding: 0.3em;
+        width: 26px;
+        height: 26px;
+        background-color: gray;
+        text-align: center;
+        border-radius: 5px;
     }
     .store__container--destaque-box-titulo{
         width: 100%;
@@ -236,7 +253,7 @@
         height: 380px;
     }
     .store__container--destaque-box-lista-item{
-        font-size: 22px;
+        font-size: 21px;
     }
     /* @@@@@@@@@@@@@@@@@@@@@@@ */
     .store__titulo{

@@ -103,4 +103,10 @@
         width: 100%;
         padding: 1em 4em;
     }
+    .banner__titulo:hover{
+        color: wheat;
+        /* transition: width 2s, height 4s; */
+        transition: 3s all;
+        transform: scale(1.1);
+    }
 }

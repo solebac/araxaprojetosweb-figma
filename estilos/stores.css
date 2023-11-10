@@ -17,7 +17,7 @@
 .store__container--destaque-box-lista{
     display: flex;
     flex-direction: column;
-    background-color: var(--green-dark);
+    background-color: var(--red-faixada);
 }
 .store__container--destaque-box-lista-item{
     width: 100%;
@@ -247,6 +247,9 @@
         background-color: transparent;
 		text-align: left;
 		padding: 0;
+    }
+    .store__container--destaque-box-lista{
+        background-color: var(--green-dark);
     }
 }
 /* @media screen and (min-width:1528px) { */

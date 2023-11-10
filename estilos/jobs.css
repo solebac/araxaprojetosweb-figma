@@ -1,6 +1,113 @@
+.job__container--teste{
+    height: auto;
+}
+.job__apresentacao{
+  display: none;
+  width: 100%;
+  max-height: 560px;
+  margin-bottom: 7em;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.job__apresentacao-imagem{
+    height: 460px;
+    width: 100%;
+    object-fit: cover;
+}
+.job__apresentacao-container{
+    position: absolute;
+    width: 70%;
+    height: 140px;
+    border-radius: 5px;
+    /* background-color: var(--branco); */
+    background-color: var(--green-dark);
+    padding: 1.5em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 10;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* margin: -25px 0 0 -25px; */
+}
+.shadow-md{
+    --tw-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.24);
+    --tw-shadow-colored: 0 8px 16px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.job__apresentacao-container{
+	box-shadow: var(--cor-de-fundo) 0px 5px 15px;
+}
+.job__apresentacao-question{
+	width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0 20%;
+}
+.job__apresentacao-question-titulo{
+	color: var(--branco);
+         font-weight: 500;
+}
+.job__apresentacao-question-flex{
+	margin-top: .5em; 
+	display: flex; 
+	min-width: 50%;
+}
+.job__apresentacao-question-flex-input{
+	padding: 1em; 
+	width: 50%; 
+	margin-right: 10px; 
+	border-radius: 8px;
+}
+.job__apresentacao-question-flex-button{
+	padding: 1em 2em; 
+	border-radius: 8px; 
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: var(--branco); 
+	background-color: var(--red-libano);
+	font-size: 15px;
+        font-weight: 600; 
+	padding: 1em 3em;
+}
+.job__apresentacao-question-flex-input::placeholder{
+    background-image: url('../thumbnail/menu/pesquisa-vr.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
 /* label.selecao-arquivo{
     width: 100%;
 } */
+#job-capa{
+    display: block;
+}
+.swiper{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.jobs-swiper-wrapper{
+    width: 99%; 
+    height: auto;
+}
+.jobs-pagination{
+    margin: .2em 0 .5em 0;
+}
+.pad-10{
+    padding: 0.8em;
+}
+.job__cantato-titulo{
+    background-color: var(--red-libano) !important;
+}
+.job__enviar{
+    background-color: var(--green-dark) !important;
+}
+
 .job__container{
     padding: 0.5em 0;
     background-color: var(--green-shadow);
@@ -44,6 +151,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: var(--cor-de-fundo);
 }
 .job__vaga--time{
     display: flex;
@@ -59,7 +167,7 @@
     color: var(--fonte-principal);
     width: 100%;
     text-align: center;
-    background-color: var(--red-faixada);
+    background-color: var(--red-libano);
     color: var(--branco);
 }
 .job__vaga--chave{
@@ -67,7 +175,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em .8em;
-    background-color: var(--red-faixada);
+    background-color: var(--red-libano);
     color: var(--branco);
 }
 .job__vaga--sobre{
@@ -79,8 +187,8 @@
     font-weight: 600;
 }
 .job__vaga--titulo, .job__vaga--remuneracao, .job__vaga--exigencia, .job__vaga--sobre{
-    font-size: 16px;
-    margin: 0.4em 0;
+    font-size: 14px;
+    margin: 0;
 }
 .job__falesobrevoce{
     width: 920px;
@@ -132,10 +240,23 @@
     label.selecao-arquivo {
       width: 93%;
     }
+    .job__vaga--titulo, .job__vaga--remuneracao, .job__vaga--exigencia, .job__vaga--sobre{
+        font-size: 16px;
+        margin: 0.4em 0;
+    }
 }
 
 /* @media screen and (min-width:1528px) { */
 @media screen and (min-width:1328px) {
+    .job__apresentacao{
+        display: block;
+    }
+    .jobs-swiper-wrapper{
+        height: 660px;
+    }
+    #job-capa{
+        display: none;
+    }
     .job__container--teste{
         height: 700px;
     }
@@ -170,9 +291,11 @@
     }
     .job__vaga{
         width: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
+        justify-content: space-between;
     }
     .job__vaga--time{
         display: flex;

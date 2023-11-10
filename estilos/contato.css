@@ -33,7 +33,6 @@ label.selecao-arquivo {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    /* padding: 0.5rem; */
     box-sizing: border-box;
     color: var(--branco);
     padding: .7em;
@@ -105,7 +104,8 @@ label.selecao-arquivo {
   }
   @media screen and (max-width: 800px) {
     .contato__titulo {
-      font-size: 2rem;
+      /* font-size: 2rem; */
+      font-size: 1.5rem;
       padding: 1.5rem 1rem;
     }
     .contato__subtitulo {
@@ -117,7 +117,8 @@ label.selecao-arquivo {
   }
   @media screen and (max-width: 600px) {
     .contato--resize {
-      padding: 0.8rem;
+      /* padding: 0.8rem; */
+      padding: 0.1rem;
     }
     .container {
       padding-right: 5px;

@@ -17,6 +17,7 @@
 .store__container--destaque-box-lista{
     display: flex;
     flex-direction: column;
+    background-color: var(--green-dark);
 }
 .store__container--destaque-box-lista-item{
     width: 100%;
@@ -222,11 +223,12 @@
         margin-left: 1em;
     }
     .test-shadow{
-        border: 1px solid;
+        /* border: 1px solid; */
         padding: 0.3em;
         width: 26px;
         height: 26px;
-        background-color: gray;
+        /* background-color: gray; */
+        background-color: var(--red-libano);
         text-align: center;
         border-radius: 5px;
     }
@@ -241,7 +243,8 @@
     .store__container--destaque-box{
         width: auto;
         min-height: 620px;
-		background-color: var(--red-faixada);
+		/* background-color: var(--red-faixada); */
+        background-color: transparent;
 		text-align: left;
 		padding: 0;
     }

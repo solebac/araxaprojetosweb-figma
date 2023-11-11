@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+    .mix__produtos-item-texto-preco {
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+    }
+    .mix__produtos-item-texto-descricao {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    font-size: 14px;
+    line-height: 1.2;
+    }
+    .tabs, .tabs1 {
+        position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--branco);
+    box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+    }
+    .input {
+    position: absolute;
+    opacity: 0;
+    }
+    .label {
+    width: 100%;
+    padding: 10px 30px;
+    /* background: #e5e5e5; */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--red-libano);
+    transition: background 0.1s, color 0.1s;
+    }
+    .label:hover {
+    background: var(--red-capa);
+    color: var(--branco);
+    }
+    .label:active {
+    background: #ccc;
+    
+    }
+    .input:focus + .label {
+    z-index: 1;
+    }
+    .input:checked + .label {
+    background: #fff;
+    color: var(--green-libano);
+    border-bottom:5px solid var(--green-libano);
+    }
+    @media (min-width: 600px) {
+    .label {
+        width: auto;
+    }
+    }
+    .panel {
+    display: none;
+    padding: 20px 30px 30px;
+    background: #fff;
+    border-top: 2px solid var(--green-libano);
+    }
+    @media (min-width: 600px) {
+    .panel {
+        order: 99;
+    }
+    }
+    .input:checked + .label + .panel {
+        display: block;
+    }

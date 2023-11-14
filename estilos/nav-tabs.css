@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
     .mix__produtos-item-texto-preco {
-    margin: 0;
+    margin: 0 0 0.5em;
     font-family: 'Bree Serif', serif;
     font-size: 32px;
     }

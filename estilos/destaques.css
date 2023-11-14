@@ -1,40 +1,33 @@
-.destaques{
-    display: none;
-}
 .destaques__options{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--green-shadow);
     width: 100%;
-    height: 720px;
+    height: auto;
+    flex-direction: column;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-
 .destaques__container--grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    padding: 2em;
+    gap: 5px;
 }
-
 .destaques__container--iconmain{
-    width: 700px;
-    height: 625px;
+    height: 350px;
 }
 .destaques__container--iconmain--mix{
-    width: 650px;
+    width: auto;
+    margin-top: 1em;
 }
 .destaques__container--item{
     box-shadow: 0px 10px 10px 0px var(--cinza-shadow);
-    width: 300px;
+    width: auto;
     height: 300px;
 }
 .destaques__container--iconmiddle{
-    width: 300px;
+    width: 458px;
     height: 300px;
 }
 .destaques__container--moldura{
@@ -44,9 +37,9 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 42%;
+    top: 45%;
     color: var(--branco);
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -62,7 +55,7 @@
     top: 35%;
     margin: 0 1em;
     background-color: var(--green-capa);
-}/**#aa767894*/
+}
 .destaques__shadow-main{
     width: 80%;
     height: 150px;
@@ -73,9 +66,70 @@
     margin: 0;
     width: 100%;
 }
+
+
+@media screen and (min-width:1024px) {
+    .destaques__container--iconmiddle{
+        width: 458px;
+        height: 300px;
+    }
+    .destaques__container--grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2em;
+    }
+    .destaques__container--iconmain{
+        width: auto;
+        height: 625px;
+    }
+}
+
 /* @media screen and (min-width:1528px) { */
 @media screen and (min-width:1328px) {
+    .autosizer{
+        width: 80%;
+    }
     .destaques{
         display: block;
+    }
+    .destaques__options{
+        flex-direction: row;
+        height: 720px;
+    }
+    
+    .destaques__container--grid{
+        gap: 20px;
+    }
+    
+    .destaques__container--iconmain{
+        width: 700px;
+        height: 625px;
+    }
+    .destaques__container--iconmain--mix{
+        width: 550px;
+
+    }
+    .destaques__container--item{
+        width: 300px;
+    }
+    .destaques__container--iconmiddle{
+        width: 300px;
+    }
+    .destaques__titulo{
+        top: 42%;
+        left: 0;
+        font-size: 5em;
+    }
+    .destaques__titulo--grid{
+        font-size: 1.3em;
+        top: 48%;
+    }
+}
+@media screen and (min-width:1528px) {
+    .autosizer{
+        width: auto;
+    }
+    .destaques__container--iconmain--mix{
+        width: 650px;
     }
 }

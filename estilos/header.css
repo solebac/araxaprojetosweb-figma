@@ -72,6 +72,14 @@
 .opcoes__link{
     color: var(--green-dark);
 }
+.opcoes__link--atacarejo{
+    color: var(--red-libano);
+    background-color: var(--green-dark);
+    padding: 0.3em .6em;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
 @media screen and (min-width:1024px) {
     .cabecalho{
         background-color: var(--green-shadow) ;

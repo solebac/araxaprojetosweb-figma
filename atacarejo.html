@@ -13,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./estilos/atacarejo/atacado.css">
 </head>
 <body class="body-container-atacado">
 
-    <header class="cabecalho" style="background-color: var(--red-capa);">
+    <header class="cabecalho cabecalho-atacarejo">
         <div class="container">
             <!-- Begin menu hamburg (Mobile) -->
             <input type="checkbox" id="menu" class="container__botao">
@@ -24,7 +25,7 @@
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
 
-            <ul class="lista-menu" style="background-color: beige;
+            <ul class="lista-menu lista-menu-atacarejo" style="background-color: beige;
             height: 85px;">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
@@ -59,7 +60,7 @@
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao"/>
             <label for="opcoes-menu" class="opcoes__rotulo">
-                <li class="opcoes__item" style="color: white;">Categorias</li>
+                <li class="opcoes__item opcoes__item-atacarejo">Categorias</li>
             </label>
 
             <ul class="lista-menu" style="color: white;">
@@ -77,13 +78,12 @@
                 </li>
             </ul>
             
-            <li class="opcoes__item"><a href="./pages/ofertas.html" class="opcoes__link" style="color: white;">OFERTA DO DIA</a></li>
-            <li class="opcoes__item"><a href="./pages/mix.html" class="opcoes__link" style="color: white;">MIX DE PRODUTOS</a></li>
-            <li class="opcoes__item"><a href="./pages/stores.html" class="opcoes__link" style="color: white;">CONTATO</a></li>
+            <li class="opcoes__item"><a href="./pages/ofertas.html" class="opcoes__link opcoes__link--atacarejos">OFERTA DO DIA</a></li>
+            <li class="opcoes__item"><a href="./pages/mix.html" class="opcoes__link opcoes__link--atacarejos">MIX DE PRODUTOS</a></li>
+            <li class="opcoes__item"><a href="./pages/stores.html" class="opcoes__link opcoes__link--atacarejos">CONTATO</a></li>
         </ul>
 
-        <div class="container" style="background-color: beige;
-        height: 85px;">
+        <div class="container container-atacarejo">
             <!-- <img src="./thumbnail/menu/localizacao-br.svg" alt="Nossas Lojas" class="container__imagem container__imagem-transparente"> -->
             <a href="#oferta-localizacao">
                 <img src="./thumbnail/menu/localizacao-red.svg" alt="Nossas Lojas" class="container__imagem container__imagem--localizacao">
@@ -107,10 +107,10 @@
     </header>
     
     <section class="capa">
-        <div class="capa__container">
-            <section class="banner capa__banner" style="background-color: var(--red-capa);">
-                <h2 class="banner__titulo capa__banner-titulo" style="color: white;">Você quer preço e qualidade?</h2>
-                <p class="banner__texto capa__banner-texto" style="color: wheat;">Consulte nossas ofertas</p>
+        <div class="capa__container capa__container--atacarejo">
+            <section class="banner capa__banner cap__banner-atacarejo">
+                <h2 class="banner__titulo capa__banner-titulo capa__banner-titulo-atacarejo">Você quer preço e qualidade?</h2>
+                <p class="banner__texto capa__banner-texto capa__banner-texto-atacarejo">Consulte nossas ofertas</p>
                 <a href="#oferta-atacado" class="banner__botao capa__botao">Confira!</a>
             </section>
         </div>
@@ -119,17 +119,12 @@
     <main>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Ofertas</h2>
-            <div style="    
-            display: block;
-            width: 1280px;
-            min-height: 720px;
-            margin:  2em auto;
-            background: #333" id="oferta-atacado">
+            <div id="oferta-atacado">
                 <!-- <embed src="./thumbnail/pdf/journal.pdf" type="application/pdf" width="100%" height="100%"> -->
                     <!-- <object data="./thumbnail/pdf/journal.pdf" type="application/pdf" width="100%" height="600px">
                         <p>Seu navegador não tem um plugin pra PDF</p>
                     </object> -->
-                    <iframe src="./thumbnail/pdf/journal.pdf" style="display: block; width:100%; height:720px; border: none;"></iframe>
+                    <iframe src="./thumbnail/pdf/journal.pdf" class="atacado__frame-pdf"></iframe>
 
             </div>  
 
@@ -140,8 +135,8 @@
         </h2>
         <section class="store__container">
             <div class="store__container--box store__container--box-atacado">
-                <div class="store__container--row" style="background-color: var(--red-libano);">
-                    <div class="store__container--titulo" style="background-color: var(--green-libano);" id="oferta-localizacao">KamelMegamix - Atacarejo</div>
+                <div class="store__container--row store__container--row-atacarejo">
+                    <div class="store__container--titulo store__container--titulo-atacarejo" id="oferta-localizacao">KamelMegamix - Atacarejo</div>
                     <div class="store__address">
                         <span class="store__address--icon"></span>
                         <p class="store__address--text">Av. Imbiara, 1825 - Vila Silverio, Araxá - MG, 38183-244</p>
@@ -172,14 +167,12 @@
     <hr />
     <footer class="rodape">
         <div class="rodape__mobile">
-            <div class="rodape__alone" style="background-color: var(--red-capa);">
+            <div class="rodape__alone rodape__alone-atacarejo">
                 <!-- <h2 class="rodape__titulo">Kamel Megamix Supermercados</h2> -->
                 <ul class="lista-rodape rodape__alone-rodape">
                     <li class="lista-rodape__item rodape__alone-item">
                         <a href="index.html">
-                            <img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo" style="background-color: beige;
-                            padding: 0.5em 0.7em;
-                            border-radius: 5px;">
+                            <img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo rodape__logo-atacarejo">
                         </a>
                     </li>
                     <li class="lista-rodape__item rodape__alone-item">
@@ -326,14 +319,11 @@
         </div>
 
         <div class="rodape__screen">
-            <div class="rodape__alone" style="background-color: var(--red-capa);">
+            <div class="rodape__alone rodape__alone-atacarejo">
                 <div class="rodape__alone-container">
                     <ul class="lista-rodape lista-rodape--base">
                         <li class="lista-rodape__titulo lista-rodape__titulo--base"> 
-                           <a href="#"><img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo" 
-                            style="background-color: beige;
-                            padding: 0.5em 0.7em;
-                            border-radius: 5px;"/></a> 
+                           <a href="#"><img src="./thumbnail/logo-nova-sf.png" alt="KamelMegamix" class="rodape__logo rodape__logo-atacarejo" /></a> 
                         </li>
                         <li class="lista-rodape__item lista-rodape__item--base">
                             <input type="email" class="rodape__cadastro" placeholder="Cadastre seu e-mail" />

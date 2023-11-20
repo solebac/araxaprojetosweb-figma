@@ -35,9 +35,6 @@
                     <a href="./pages/receitas.html" class="lista-menu__link">Receitas</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Novidades</a>
-                </li>
-                <li class="lista-menu__item">
                     <a href="./pages/mix.html" class="lista-menu__link" >Mix de Produtos</a>
                 </li>
                 <li class="lista-menu__item">
@@ -68,7 +65,7 @@
                     <a href="./pages/receitas.html" class="lista-menu__link">Receitas</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Novidades</a>
+                    <a href="./index.html" class="lista-menu__link">Supermercado</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="/pages/stores.html" class="lista-menu__link">Encontre uma loja</a>
@@ -111,7 +108,7 @@
             <section class="banner capa__banner cap__banner-atacarejo">
                 <h2 class="banner__titulo-atacado capa__banner-titulo capa__banner-titulo-atacarejo">Você quer preço e qualidade?</h2>
                 <p class="banner__texto capa__banner-texto capa__banner-texto--button">Consulte nossas ofertas</p>
-                <a href="#oferta-atacado" class="banner__botao capa__botao">Confira!</a>
+                <a href="#oferta-atacado2" class="banner__botao capa__botao">Confira!</a>
             </section>
             <section class="capa__banner-titulo-slogan capa__banner-titulo-slogan--atacado">
                 <p class="banner__texto capa__banner-texto capa__banner-texto--tipografia">Atacarejo</p>
@@ -120,8 +117,35 @@
     </section>
 
     <main>
+
+        <h2 class="carrossel__titulo">
+            Em nossas lojas você encontra
+        </h2>
+        <div class="store__container">
+            <div class="store__container--destaque">
+                <div class="store__container--destaque-box">
+                    <img src="../thumbnail/destaques/familia-02.jpg" alt=""
+                    class="store__container--destaque-box-imagem">
+                </div>
+                <!-- <p class="store__container--destaque-box-titulo">Em nossas lojas você encontra</p> -->
+                <div class="store__container--destaque-box">
+                    <ul class="store__container--destaque-box-lista-atacado">
+                        <li class="store__container--destaque-box-lista-item"><i class="test-atendimento test-shadow test-shadow-atacado"></i> <p class="test-span">Atendimento</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-preco test-shadow test-shadow-atacado"></i><p class="test-span"> preço</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-qualidade test-shadow test-shadow-atacado"></i><p class="test-span"> qualidade</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-variedade test-shadow test-shadow-atacado"></i><p class="test-span"> variedade</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-estacionamento test-shadow test-shadow-atacado"></i><p class="test-span"> estacionamento</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-acessibilidade test-shadow test-shadow-atacado"></i><p class="test-span"> acessibilidade</p></li>
+                        <li class="store__container--destaque-box-lista-item"><i class="test-entrega test-shadow test-shadow-atacado"></i><p class="test-span"> Pontualidade na entrega</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Ofertas</h2>
+            <h2 class="carrossel__titulo" id="oferta-atacado2">Ofertas</h2>
             <div id="oferta-atacado">
                 <!-- <embed src="./thumbnail/pdf/journal.pdf" type="application/pdf" width="100%" height="100%"> -->
                     <!-- <object data="./thumbnail/pdf/journal.pdf" type="application/pdf" width="100%" height="600px">
@@ -133,13 +157,13 @@
 
         </section>
 
-        <h2 class="store__titulo">
+        <h2 class="carrossel__titulo" id="oferta-localizacao">
             Fácil localização
         </h2>
         <section class="store__container">
             <div class="store__container--box store__container--box-atacado">
                 <div class="store__container--row store__container--row-atacarejo">
-                    <div class="store__container--titulo store__container--titulo-atacarejo" id="oferta-localizacao">KamelMegamix - Atacarejo</div>
+                    <div class="store__container--titulo store__container--titulo-atacarejo">KamelMegamix - Atacarejo</div>
                     <div class="store__address">
                         <span class="store__address--icon"></span>
                         <p class="store__address--text">Av. Imbiara, 1825 - Vila Silverio, Araxá - MG, 38183-244</p>

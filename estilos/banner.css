@@ -115,4 +115,10 @@
         transition: 3s all;
         transform: scale(1.1);
     }
+    .capa__banner--receita{
+        border: 1px solid wheat;
+    }
+    .banner__titulo-receita:hover{
+        color: var(--green-dark);
+    }
 }

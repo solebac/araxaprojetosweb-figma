@@ -227,6 +227,9 @@
         margin-left: 1em;
     }
     .test-shadow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* border: 1px solid; */
         padding: 0.3em;
         width: 26px;
@@ -235,6 +238,9 @@
         background-color: var(--red-libano);
         text-align: center;
         border-radius: 5px;
+    }
+    .test-shadow-atacado{
+        background-color: var(--green-dark);
     }
     .store__container--destaque-box-titulo{
         width: 100%;
@@ -254,6 +260,10 @@
     }
     .store__container--destaque-box-lista{
         background-color: var(--green-dark);
+    }
+    .store__container--destaque-box-lista-atacado{
+        min-height: 622px;
+        background-color: var(--red-capa);
     }
 }
 /* @media screen and (min-width:1528px) { */

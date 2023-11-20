@@ -4,7 +4,7 @@
     text-align: center;
     padding: 2.5em 2.0em;
 }
-.banner__titulo{
+.banner__titulo, .banner__titulo-atacado{
     font-family: var(--fonte-secundaria);
     line-height: 1.2;
     font-size: 24px;
@@ -75,7 +75,7 @@
     /* .banner__pesquisa{
         padding: 1em 2.5em;
     } */
-    .banner__titulo{
+    .banner__titulo, .banner__titulo-atacado{
         font-size: 36px;
     }
     .banner__botao{
@@ -104,8 +104,14 @@
         padding: 1em 4em;
     }
     .banner__titulo:hover{
-        color: wheat;
+        /* color: wheat; */
+        color:var(--red-libano);
         /* transition: width 2s, height 4s; */
+        transition: 3s all;
+        transform: scale(1.1);
+    }
+    .banner__titulo-atacado:hover{
+        color: var(--green-libano);
         transition: 3s all;
         transform: scale(1.1);
     }
